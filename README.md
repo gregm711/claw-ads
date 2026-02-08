@@ -6,31 +6,31 @@ Currently supports **Meta (Facebook/Instagram)**. Google Ads, TikTok, X, and Red
 
 ## Setup
 
-### Install
-
-```bash
-git clone https://github.com/gregm711/claw-ads.git
-cd claw-ads
-npm install
-npm run build
-```
-
-### Configure Claude Desktop
-
-Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_desktop_config.json`):
 
 ```json
 {
   "mcpServers": {
     "claw-ads": {
-      "command": "node",
-      "args": ["/path/to/claw-ads/build/index.js"],
+      "command": "npx",
+      "args": ["-y", "claw-ads-mcp"],
       "env": {
         "META_ACCESS_TOKEN": "your_meta_access_token"
       }
     }
   }
 }
+```
+
+That's it. No cloning, no building — `npx` handles everything.
+
+### From Source (for development)
+
+```bash
+git clone https://github.com/gregm711/claw-ads.git
+cd claw-ads
+npm install
+npm run build
 ```
 
 ### Get a Meta Access Token

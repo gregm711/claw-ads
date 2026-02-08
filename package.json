@@ -6,10 +6,14 @@
   "bin": {
     "claw-ads-mcp": "build/index.js"
   },
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "prepublishOnly": "npm run build"
   },
   "keywords": ["mcp", "ads", "meta", "facebook", "advertising"],
   "license": "MIT",
