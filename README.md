@@ -6,7 +6,23 @@ Currently supports **Meta (Facebook/Instagram)**. Google Ads, TikTok, X, and Red
 
 ## Setup
 
-Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_desktop_config.json`):
+### Claude Code
+
+```bash
+claude mcp add claw-ads -e META_ACCESS_TOKEN=your_meta_access_token -- npx -y claw-ads-mcp
+```
+
+### Codex
+
+```bash
+codex mcp add claw-ads -- npx -y claw-ads-mcp
+```
+
+Then set your token via environment variable or `.env` file.
+
+### Claude Desktop
+
+Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 
 ```json
 {
@@ -22,7 +38,11 @@ Add to your Claude Desktop config (`~/Library/Application Support/Claude/claude_
 }
 ```
 
-That's it. No cloning, no building — `npx` handles everything.
+### Other MCP Clients
+
+Use the standard MCP config above — any client that supports MCP (Cursor, Cline, etc.) can use it.
+
+No cloning, no building — `npx` handles everything.
 
 ### From Source (for development)
 
