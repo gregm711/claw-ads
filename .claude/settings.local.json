@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebSearch",
+      "WebFetch(domain:www.pulsemcp.com)",
+      "WebFetch(domain:glama.ai)",
+      "WebFetch(domain:lobehub.com)",
+      "WebFetch(domain:skywork.ai)",
+      "WebFetch(domain:mcpservers.org)",
+      "WebFetch(domain:scrapecreators.com)",
+      "WebFetch(domain:playbooks.com)",
+      "WebFetch(domain:nanobits.beehiiv.com)",
+      "WebFetch(domain:www.coupler.io)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Meta ads MCP server with full campaign management and competitor research\n\n20 tools covering campaign/ad set/ad CRUD, creatives, audiences, insights,\nand Ad Library competitor research — all via the Meta Graph API. Architected\nfor multi-platform expansion \\(Google, TikTok, X, Reddit\\) with per-platform\nauto-registration based on available tokens.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
